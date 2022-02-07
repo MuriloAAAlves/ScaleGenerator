@@ -2,26 +2,49 @@
 <html lang="en">
 <div class="container">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        let escalaA = ['A','B','C#','D','E','F#','G#']
+        function shuf($id){
+            $id.sort((a, b, c, d) => Math.random())
+        }
+        $(document).ready(function(){
+          $("#A").click(function(){
+            console.log("aaa");
+            $("#escala").toggle();
+          });
+        });
+    </script> 
 </head>
+
 <body>
     <div class="notas">
-        <div class="A">A</div>
-        <div class="A#">A#</div>
-        <div class="B">B</div>
-        <div class="C">C</div>
-        <div class="C#">C#</div>
-        <div class="D">D</div>
-        <div class="D#">D#</div>
-        <div class="E">E</div>
-        <div class="F">F</div>
-        <div class="F#">F#</div>
-        <div class="G">G</div>
-        <div class="G#">G#</div>
+        <button id="A" class="A">A</button>
+        <button class="Asus">A#</button>
+        <button class="B">B</button>
+        <button class="C">C</button>
+        <button class="Csus">C#</button>
+        <button class="D">D</button>
+        <button class="Dsus">D#</button>
+        <button class="E">E</button>
+        <button class="F">F</button>
+        <button class="Fsus">F#</button>
+        <button class="G">G</button>
+        <button class="Gsus">G#</button>
+    </div>
+    <div id="escala" style="display:none">
+        <script>
+            function shuf(){
+                return (
+            escalaA.sort((a, b, c, d) => Math.random())
+            )
+        }
+        </script>
     </div>
 </body>
 </div>
