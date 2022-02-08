@@ -4,11 +4,15 @@
     width: 60%;
     background-color: honeydew;
     justify-content: center;
+    justify-items: center;
+    row-gap: 3em;
 }
 .notas{
     display: grid;
     grid-area: 1/1/5/3;
-    width: 10em   
+    width: 10em;
+    row-gap: 1em;
+    column-gap: 1em;
 }
 .A{
     display: grid;
@@ -26,4 +30,8 @@
 }
 .escala{
     display: grid;
+    border: 1px solid black;
+    grid-auto-flow: row;
+    width: 20em;
+    justify-items: center;
 }

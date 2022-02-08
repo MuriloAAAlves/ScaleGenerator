@@ -9,42 +9,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let escalaA = ['A','B','C#','D','E','F#','G#']
-        function shuf($id){
-            $id.sort((a, b, c, d) => Math.random())
-        }
         $(document).ready(function(){
-          $("#A").click(function(){
-            console.log("aaa");
-            $("#escala").toggle();
+            $('#A').click(function insert(){
+                const HTML = escalaA.map( item => `<div>${item}</div>`).join('');
+                document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
+                shuffle(escalaA)
           });
         });
+        
+        function shuffle(array) {
+            let currentIndex = array.length,  randomIndex;
+            while (currentIndex != 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+            [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+        }
+
+            return array;
+        }
+        let escalaA = ['A','B','C#','D','E','F#','G#']
+        let escalaAsus = ['a sa']
     </script> 
 </head>
 
 <body>
     <div class="notas">
         <button id="A" class="A">A</button>
-        <button class="Asus">A#</button>
-        <button class="B">B</button>
-        <button class="C">C</button>
-        <button class="Csus">C#</button>
-        <button class="D">D</button>
-        <button class="Dsus">D#</button>
-        <button class="E">E</button>
-        <button class="F">F</button>
-        <button class="Fsus">F#</button>
-        <button class="G">G</button>
-        <button class="Gsus">G#</button>
+        <button id="Asus" class="Asus">A#</button>
+        <button id="B" class="B">B</button>
+        <button id="C" class="C">C</button>
+        <button id="Csus" class="Csus">C#</button>
+        <button id="D" class="D">D</button>
+        <button id="Dsus" class="Dsus">D#</button>
+        <button id="E" class="E">E</button>
+        <button id="F" class="F">F</button>
+        <button id="Fsus" class="Fsus">F#</button>
+        <button id="G" class="G">G</button>
+        <button id="Gsus" class="Gsus">G#</button>
     </div>
-    <div id="escala" style="display:none">
-        <script>
-            function shuf(){
-                return (
-            escalaA.sort((a, b, c, d) => Math.random())
-            )
-        }
-        </script>
+    <div id="escala" class="escala">
     </div>
 </body>
 </div>
