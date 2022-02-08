@@ -32,6 +32,6 @@
     display: grid;
     border: 1px solid black;
     grid-auto-flow: row;
-    width: 20em;
+    width: 10em;
     justify-items: center;
 }
