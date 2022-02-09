@@ -14,7 +14,7 @@
                 shuffle(escalaA)
                 const slice = escalaA.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de A' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of A' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'    
           });
         });
@@ -23,7 +23,7 @@
                 shuffle(escalaAsus)
                 const slice = escalaAsus.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de A#' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of A#' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -32,7 +32,7 @@
                 shuffle(escalaB)
                 const slice = escalaB.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de B' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of B' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -41,7 +41,7 @@
                 shuffle(escalaC)
                 const slice = escalaC.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de C' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of C' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -50,7 +50,7 @@
                 shuffle(escalaCsus)
                 const slice = escalaCsus.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de C#' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of C#' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -59,7 +59,7 @@
                 shuffle(escalaD)
                 const slice = escalaD.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de D' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of D' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -68,7 +68,7 @@
                 shuffle(escalaDsus)
                 const slice = escalaDsus.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de D#' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of D#' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -77,7 +77,7 @@
                 shuffle(escalaE)
                 const slice = escalaE.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de E' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of E' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -86,7 +86,7 @@
                 shuffle(escalaF)
                 const slice = escalaF.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de F' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of F' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -95,7 +95,7 @@
                 shuffle(escalaFsus)
                 const slice = escalaFsus.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de F#' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of F#' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -104,7 +104,7 @@
                 shuffle(escalaG)
                 const slice = escalaG.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de G' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of G' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -113,7 +113,7 @@
                 shuffle(escalaGsus)
                 const slice = escalaGsus.slice(0,4)
                 const HTML = slice.map( item => `<div>${item}</div>`).join('');
-                document.getElementById("escalade").innerHTML = '<div>' + 'Escala de G#' + '</div>'
+                document.getElementById("escalade").innerHTML = '<div>' + 'Scale of G#' + '</div>'
                 document.getElementById("escala").innerHTML = '<div>' + HTML + '</div>'
           });
         });
@@ -146,7 +146,7 @@
 
 <body>
     <div class="box">
-        <div class="texto">Sempre que escolher uma nota, será gerado 4 notas aleatórias na escala!</div>
+        <div class="texto">When you choose a key, it'll be generated 4 random notes in the scale!</div>
         <div class="notas">
             <button id="A" class="A">A</button>
             <button id="Asus" class="Asus">A#</button>
@@ -162,12 +162,12 @@
             <button id="Gsus" class="Gsus">G#</button>
         </div>
         <div class="resul">
-            <div id="escalade" class="escalade">Escolha uma Escala!</div>
+            <div id="escalade" class="escalade">Choose a key!</div>
             <div id="escala" class="escala">
-                Aqui<br>
-                estará<br>
-                4 notas<br>
-                aleatórias da escala<br>
+                Here<br>
+                will be<br>
+                4 random<br>
+                notes in the scale<br>
             </div>
         </div>
     </div>
